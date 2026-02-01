@@ -1,13 +1,11 @@
-@import "tailwindcss/preflight" /* Improve text rendering */ html;
+@import "tailwindcss";
 
-@tailwind utilities;
-
-{
+/* Improve text rendering */
+html {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
-/* Make form controls behave nicely on dark backgrounds */
 input,
 textarea,
 select,
@@ -16,9 +14,22 @@ button {
     font: inherit;
 }
 
-/* Remove Safari inner shadows on inputs */
 input,
 textarea {
     -webkit-appearance: none;
     appearance: none;
+}
+
+@theme {
+    --color-jade-50:  #f2fbf7;
+    --color-jade-100: #dff6ec;
+    --color-jade-200: #b7ead1;
+    --color-jade-300: #7fd9b3;
+    --color-jade-400: #3fc28d;
+    --color-jade-500: #1ea971;
+    --color-jade-600: #14865a;
+    --color-jade-700: #116b48;
+    --color-jade-800: #0f553b;
+    --color-jade-900: #0c3f2f;
+    --color-jade-950: #062822;
 }

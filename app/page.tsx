@@ -9,7 +9,7 @@ export default function HomePage() {
     return (
         <main className="flex flex-col">
             {/* 1. Hero / Above the fold */}
-            <Section className="bg-jade-950" spacing="loose">
+            <Section className="bg-jade-800" spacing="loose">
                 <HeroSection />
             </Section>
 
@@ -24,7 +24,7 @@ export default function HomePage() {
             </Section>
 
             {/* 4. Contact & photo submission (primary CTA) */}
-            <Section id="contact" className="bg-jade-950" spacing="loose">
+            <Section id="contact" className="bg-jade-500" spacing="loose">
                 <ContactAndPhotoSubmission />
             </Section>
 
