@@ -1,3 +1,7 @@
+import PinCushionIllustration from "@/components/illustrations/PinCushionIllustration";
+import ThreadRollIllustration from "@/components/illustrations/ThreadRollIllustration";
+import SewingMachineIllustration from "@/components/illustrations/SewingMachineIllustration";
+
 export default function HeroSection() {
   return (
       <div className="grid items-center gap-12 md:grid-cols-2">
@@ -30,35 +34,9 @@ export default function HeroSection() {
 
         <div className="flex items-center justify-center">
           <div className="w-full max-w-sm rounded-3xl border border-white/10 bg-white/5 p-6">
-            <svg
-                aria-hidden="true"
-                className="h-48 w-full text-white/80"
-                viewBox="0 0 320 200"
-                fill="none"
-            >
-              <rect
-                  x="16"
-                  y="16"
-                  width="288"
-                  height="168"
-                  rx="24"
-                  stroke="currentColor"
-                  strokeWidth="2"
-              />
-              <path
-                  d="M44 132c38-34 62-50 94-50 31 0 46 12 70 36 24 24 43 32 68 32"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-              />
-              <circle cx="92" cy="78" r="18" stroke="currentColor" strokeWidth="2" />
-              <path
-                  d="M188 64h72m-72 20h72m-72 20h48"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-              />
-            </svg>
+              <SewingMachineIllustration className="h-50 w-full text-white/80" />
+              {/*<ThreadRollIllustration className="h-40 w-full text-white/80" />*/}
+              {/*<SewingMachineIllustration className="h-40 w-full text-white/80" />*/}
           </div>
         </div>
       </div>

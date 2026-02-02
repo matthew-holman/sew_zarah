@@ -16,6 +16,14 @@ export default function Footer() {
                     <a className="hover:text-white" href="#contact">
                         Get in touch
                     </a>
+                    <a
+                        href="https://www.instagram.com/sewzarah"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm text-white/60 hover:text-white"
+                    >
+                        Instagram
+                    </a>
                 </div>
             </div>
         </footer>

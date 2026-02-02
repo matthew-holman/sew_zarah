@@ -32,7 +32,7 @@ export default function ProcessOverview() {
                 {steps.map((step, index) => (
                     <div
                         key={step.title}
-                        className="rounded-2xl bg-white/5 p-6 ring-1 ring-white/10"
+                        className="rounded-2xl bg-white/10 p-6 ring-1 ring-white/10"
                     >
                         <div className="mb-5 inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/20 text-sm font-semibold text-white">
                             {index + 1}

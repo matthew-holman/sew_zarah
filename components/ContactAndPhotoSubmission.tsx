@@ -11,7 +11,7 @@ export default function ContactAndPhotoSubmission() {
                 </p>
             </div>
 
-            <div className="mt-10 rounded-3xl bg-white/5 p-8 ring-1 ring-white/15">
+            <div className="mt-10 rounded-3xl bg-black/10 p-8 ring-1 ring-white/25">
                 <form className="grid gap-4 md:grid-cols-2">
                     <label className="flex flex-col gap-2 text-sm text-white/70">
                         Name <span className="text-white/40">(required)</span>
