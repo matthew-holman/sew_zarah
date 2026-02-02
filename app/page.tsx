@@ -7,7 +7,7 @@ import Section from "@/components/Section";
 
 export default function HomePage() {
   return (
-    <main id="top" className="flex flex-col">
+    <main id="top" className="flex flex-col overflow-x-hidden">
       {/* 1. Hero / Above the fold */}
       <Section
         id="who-we-are"

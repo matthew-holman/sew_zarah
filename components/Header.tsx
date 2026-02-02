@@ -3,9 +3,9 @@
 import { useEffect, useMemo, useState } from "react";
 
 const ACTIVE_LINK_CLASS_NAME =
-  "rounded-full bg-white/15 px-3 py-1.5 text-sm font-medium text-white ring-1 ring-white/25 transition";
+  "flex-none whitespace-nowrap rounded-full bg-white/15 px-3 py-2 text-sm font-medium text-white ring-1 ring-white/25 transition md:px-4 md:py-2";
 const INACTIVE_LINK_CLASS_NAME =
-  "rounded-full px-3 py-1.5 text-sm font-medium text-white/70 transition hover:bg-white/10 hover:text-white";
+  "flex-none whitespace-nowrap rounded-full px-3 py-2 text-sm font-medium text-white/70 transition hover:bg-white/10 hover:text-white md:px-4 md:py-2";
 
 export default function Header() {
   const navItems = useMemo(
@@ -97,7 +97,7 @@ export default function Header() {
         >
           Sew Zarah
         </a>
-        <nav className="flex items-center gap-2">
+        <nav className="flex items-center gap-2 overflow-x-auto px-4 -mx-4 md:overflow-visible md:px-0 md:mx-0">
           {navItems.map((item) => {
             const isActive = item.id === activeSectionId;
             return (
