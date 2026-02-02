@@ -1,4 +1,5 @@
 import ContactSuccessBanner from "@/components/ContactSuccessBanner";
+import { Suspense } from "react";
 
 export default function ContactAndPhotoSubmission() {
   return (
@@ -14,7 +15,9 @@ export default function ContactAndPhotoSubmission() {
       </div>
 
       <div className="mt-10 w-full max-w-full rounded-3xl bg-black/10 p-8 ring-1 ring-white/25">
-        <ContactSuccessBanner />
+        <Suspense fallback={null}>
+          <ContactSuccessBanner />
+        </Suspense>
         <form
           name="contact"
           method="POST"
