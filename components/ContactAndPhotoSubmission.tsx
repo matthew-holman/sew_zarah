@@ -1,3 +1,5 @@
+import ContactSuccessBanner from "@/components/ContactSuccessBanner";
+
 export default function ContactAndPhotoSubmission() {
   return (
     <div>
@@ -12,8 +14,19 @@ export default function ContactAndPhotoSubmission() {
       </div>
 
       <div className="mt-10 w-full max-w-full rounded-3xl bg-black/10 p-8 ring-1 ring-white/25">
-        <form className="grid w-full max-w-full gap-4 md:grid-cols-2">
+        <ContactSuccessBanner />
+        <form
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          encType="multipart/form-data"
+          action="/?sent=1#contact"
+          className="grid w-full max-w-full gap-4 md:grid-cols-2"
+        >
+          <input type="hidden" name="form-name" value="contact" />
           <input type="hidden" name="bot-field" />
+
           <label className="flex min-w-0 flex-col gap-2 text-sm text-white/70">
             Name <span className="text-white/40">(required)</span>
             <input
@@ -32,7 +45,7 @@ export default function ContactAndPhotoSubmission() {
               className="w-full min-w-0 rounded-xl bg-white/5 px-4 py-3 text-white placeholder:text-white/40 ring-1 ring-white/15 focus:outline-none focus:ring-2 focus:ring-white/40"
               placeholder="you@email.com or +46…"
               type="text"
-              name="contact"
+              name="email_or_phone"
               autoComplete="email"
               required
             />
