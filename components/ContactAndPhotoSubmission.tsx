@@ -13,6 +13,7 @@ export default function ContactAndPhotoSubmission() {
 
       <div className="mt-10 w-full max-w-full rounded-3xl bg-black/10 p-8 ring-1 ring-white/25">
         <form className="grid w-full max-w-full gap-4 md:grid-cols-2">
+          <input type="hidden" name="bot-field" />
           <label className="flex min-w-0 flex-col gap-2 text-sm text-white/70">
             Name <span className="text-white/40">(required)</span>
             <input
