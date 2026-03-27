@@ -1,24 +1,23 @@
 import PinCushionIllustration from "@/components/illustrations/PinCushionIllustration";
 import ThreadRollIllustration from "@/components/illustrations/ThreadRollIllustration";
 import SewingMachineIllustration from "@/components/illustrations/SewingMachineIllustration";
+import { hero } from "@/content";
 
 export default function HeroSection() {
   return (
       <div className="grid items-center gap-12 md:grid-cols-2">
         <div className="flex flex-col gap-6">
         <span className="w-fit rounded-full border border-white/20 bg-white/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-white/70">
-          Clothing repair & alterations
+          {hero.badge}
         </span>
 
           <div>
             <h1 className="text-4xl leading-tight text-white md:text-6xl">
-              Thoughtful clothing repairs, done with care.
+              {hero.heading}
             </h1>
 
             <p className="mt-5 max-w-prose text-lg text-white/70">
-              Send a few photos and a short description. We’ll assess whether the
-              repair is possible and provide an estimated price range before you
-              commit.
+              {hero.tagline}
             </p>
           </div>
 
@@ -27,7 +26,7 @@ export default function HeroSection() {
                 className="inline-flex items-center justify-center rounded-full bg-white/15 px-6 py-3 text-sm font-semibold text-white ring-1 ring-white/25 transition hover:bg-white/25"
                 href="#contact"
             >
-              Send photos for assessment
+              {hero.cta}
             </a>
           </div>
         </div>
