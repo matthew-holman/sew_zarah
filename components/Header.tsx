@@ -10,10 +10,13 @@ const INACTIVE_LINK_CLASS_NAME =
 export default function Header() {
   const navItems = useMemo(
     () => [
-      { id: "who-we-are", label: "Who we are", href: "#who-we-are" },
-      { id: "how-it-works", label: "How it works", href: "#how-it-works" },
-      { id: "expectations", label: "Pricing", href: "#expectations" },
-      { id: "contact", label: "Get in touch", href: "#contact" },
+      { id: "home", label: "Laga dina kläder", href: "#home" },
+      { id: "how-it-works", label: "Så fungerar det", href: "#how-it-works" },
+      { id: "services", label: "Tjänster", href: "#services" },
+      { id: "pricing", label: "Priser & bedömning", href: "#pricing" },
+      { id: "why-repair", label: "Varför laga", href: "#why-repair" },
+      { id: "about-me", label: "Om mig", href: "#about-me" },
+      { id: "contact", label: "Få en bedömning", href: "#contact" },
     ],
     [],
   );

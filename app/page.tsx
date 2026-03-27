@@ -1,6 +1,8 @@
 import HeroSection from "@/components/HeroSection";
 import ProcessOverview from "@/components/ProcessOverview";
 import ExpectationSetting from "@/components/ExpectationSetting";
+import WhyRepair from "@/components/WhyRepair";
+import AboutMe from "@/components/AboutMe";
 import ContactAndPhotoSubmission from "@/components/ContactAndPhotoSubmission";
 import Footer from "@/components/Footer";
 import Section from "@/components/Section";
@@ -9,11 +11,7 @@ export default function HomePage() {
   return (
     <main id="top" className="flex flex-col overflow-x-hidden">
       {/* 1. Hero / Above the fold */}
-      <Section
-        id="who-we-are"
-        className="bg-jade-900 scroll-mt-24"
-        spacing="loose"
-      >
+      <Section id="home" className="bg-jade-900 scroll-mt-24" spacing="loose">
         <HeroSection />
       </Section>
 
@@ -28,14 +26,32 @@ export default function HomePage() {
 
       {/* 3. Expectation setting */}
       <Section
-        id="expectations"
+        id="pricing"
         className="bg-jade-700 scroll-mt-24"
         spacing="loose"
       >
         <ExpectationSetting />
       </Section>
 
-      {/* 4. Contact & photo submission (primary CTA) */}
+      {/* 4. Why repair instead of buying new */}
+      <Section
+        id="why-repair"
+        className="bg-jade-600 scroll-mt-24"
+        spacing="loose"
+      >
+        <WhyRepair />
+      </Section>
+
+      {/* 5. About me */}
+      <Section
+        id="about-me"
+        className="bg-jade-500 scroll-mt-24"
+        spacing="loose"
+      >
+        <AboutMe />
+      </Section>
+
+      {/* 6. Contact & photo submission (primary CTA) */}
       <Section
         id="contact"
         className="bg-jade-600 scroll-mt-24"
@@ -44,8 +60,8 @@ export default function HomePage() {
         <ContactAndPhotoSubmission />
       </Section>
 
-      {/* 5. Footer */}
-      <Section className="bg-jade-500 scroll-mt-24" spacing="loose">
+      {/* 7. Footer */}
+      <Section className="bg-jade-700 scroll-mt-24" spacing="loose">
         <Footer />
       </Section>
     </main>
