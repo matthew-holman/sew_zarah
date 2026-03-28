@@ -12,7 +12,7 @@ export default function HomePage() {
   return (
     <main id="top" className="flex flex-col overflow-x-hidden">
       {/* 1. Hero / Above the fold */}
-      <Section id="home" className="bg-jade-900 scroll-mt-24" spacing="loose">
+      <Section id="home" className="bg-jade-900 scroll-mt-24" spacing="default">
         <HeroSection />
       </Section>
 
@@ -37,43 +37,43 @@ export default function HomePage() {
       {/* 4. Expectation setting */}
       <Section
         id="pricing"
-        className="bg-jade-600 scroll-mt-24"
+        className="bg-jade-700 scroll-mt-24"
         spacing="loose"
       >
         <ExpectationSetting />
       </Section>
 
-      {/* 4. Why repair instead of buying new */}
+      {/* 5. Why repair instead of buying new */}
       <Section
         id="why-repair"
-        className="bg-jade-500 scroll-mt-24"
+        className="bg-jade-700 scroll-mt-24"
         spacing="loose"
       >
         <WhyRepair />
       </Section>
 
-      {/* 5. About me */}
+      {/* 6. About me */}
       <Section
         id="about-me"
-        className="bg-jade-600 scroll-mt-24"
+        className="bg-jade-800 scroll-mt-24"
         spacing="loose"
       >
         <AboutMe />
       </Section>
 
-      {/* 6. Contact & photo submission (primary CTA) */}
+      {/* 7. Contact & photo submission (primary CTA) */}
       <Section
         id="contact"
-        className="bg-jade-700 scroll-mt-24"
+        className="bg-jade-900 scroll-mt-24"
         spacing="loose"
       >
         <ContactAndPhotoSubmission />
       </Section>
 
-      {/* 7. Footer */}
+      {/* 8. Footer */}
       <Section
-        className="bg-jade-800 scroll-mt-24"
-        spacing="loose"
+        className="bg-jade-950 scroll-mt-24"
+        spacing="footer"
         pattern={false}
       >
         <Footer />

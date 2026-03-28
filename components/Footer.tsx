@@ -14,7 +14,7 @@ export default function Footer() {
             Så fungerar det
           </a>
           <a className="hover:text-white" href="#contact">
-            Get in touch
+            Kontakta mig
           </a>
           <a
             href="https://www.instagram.com/sewzarah"

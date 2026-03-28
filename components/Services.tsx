@@ -4,7 +4,9 @@ export default function Services() {
   return (
     <div>
       <div className="max-w-2xl">
-        <h2 className="text-3xl text-white md:text-4xl">{services.heading}</h2>
+        <h2 className="font-display text-3xl font-bold text-white md:text-4xl">
+          {services.heading}
+        </h2>
         <p className="mt-4 text-lg text-white/70">{services.intro}</p>
       </div>
 

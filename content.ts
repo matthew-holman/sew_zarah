@@ -91,9 +91,18 @@ export const pricing = {
 export const whyRepair = {
   heading: "Varför laga istället för att köpa nytt",
   points: [
-    "Att laga kläder är ofta både billigare och mer hållbart än att köpa nytt.",
-    "Du behåller plagg du redan trivs i – och slipper lägga tid på att hitta något nytt som passar lika bra.",
-    "Många lagningar kostar dessutom betydligt mindre än att ersätta plagget.",
+    {
+      title: "Mer hållbart",
+      body: "Att laga kläder är ofta både billigare och mer hållbart än att köpa nytt.",
+    },
+    {
+      title: "Behåll det du älskar",
+      body: "Du behåller plagg du redan trivs i – och slipper lägga tid på att hitta något nytt som passar lika bra.",
+    },
+    {
+      title: "Billigare än nytt",
+      body: "Många lagningar kostar dessutom betydligt mindre än att ersätta plagget.",
+    },
   ],
 };
 
