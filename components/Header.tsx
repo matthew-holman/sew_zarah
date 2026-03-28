@@ -3,20 +3,24 @@
 import { useEffect, useMemo, useState } from "react";
 
 const ACTIVE_LINK_CLASS_NAME =
-  "flex-none whitespace-nowrap rounded-full bg-white px-3 py-2 text-sm font-medium text-zinc-900 transition md:px-4 md:py-2";
+  "flex-none whitespace-nowrap rounded-full bg-white/15 px-3 py-2 text-sm font-medium text-white transition md:px-4 md:py-2";
 const INACTIVE_LINK_CLASS_NAME =
   "flex-none whitespace-nowrap rounded-full px-3 py-2 text-sm font-medium text-white/60 transition hover:bg-white/10 hover:text-white md:px-4 md:py-2";
+const CTA_LINK_CLASS_NAME =
+  "flex-none whitespace-nowrap rounded-full bg-white px-3 py-2 text-sm font-semibold text-zinc-900 transition hover:bg-white/90 md:px-4 md:py-2";
 
 export default function Header() {
   const navItems = useMemo(
     () => [
-      { id: "home", label: "Laga dina kläder", href: "#home" },
       { id: "how-it-works", label: "Så fungerar det", href: "#how-it-works" },
-      { id: "services", label: "Tjänster", href: "#services" },
       { id: "pricing", label: "Priser & bedömning", href: "#pricing" },
-      { id: "why-repair", label: "Varför laga", href: "#why-repair" },
       { id: "about-me", label: "Om mig", href: "#about-me" },
-      { id: "contact", label: "Få en bedömning", href: "#contact" },
+      {
+        id: "contact",
+        label: "Få en bedömning",
+        href: "#contact",
+        isCta: true,
+      },
     ],
     [],
   );
@@ -103,13 +107,16 @@ export default function Header() {
         <nav className="flex items-center gap-2 overflow-x-auto px-4 -mx-4 md:overflow-visible md:px-0 md:mx-0">
           {navItems.map((item) => {
             const isActive = item.id === activeSectionId;
+            const className = item.isCta
+              ? CTA_LINK_CLASS_NAME
+              : isActive
+                ? ACTIVE_LINK_CLASS_NAME
+                : INACTIVE_LINK_CLASS_NAME;
             return (
               <a
                 key={item.id}
                 href={item.href}
-                className={
-                  isActive ? ACTIVE_LINK_CLASS_NAME : INACTIVE_LINK_CLASS_NAME
-                }
+                className={className}
                 aria-current={isActive ? "page" : undefined}
               >
                 {item.label}
