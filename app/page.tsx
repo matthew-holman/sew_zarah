@@ -1,5 +1,6 @@
 import HeroSection from "@/components/HeroSection";
 import ProcessOverview from "@/components/ProcessOverview";
+import Services from "@/components/Services";
 import ExpectationSetting from "@/components/ExpectationSetting";
 import WhyRepair from "@/components/WhyRepair";
 import AboutMe from "@/components/AboutMe";
@@ -24,10 +25,19 @@ export default function HomePage() {
         <ProcessOverview />
       </Section>
 
-      {/* 3. Expectation setting */}
+      {/* 3. Services */}
+      <Section
+        id="services"
+        className="bg-jade-700 scroll-mt-24"
+        spacing="loose"
+      >
+        <Services />
+      </Section>
+
+      {/* 4. Expectation setting */}
       <Section
         id="pricing"
-        className="bg-jade-700 scroll-mt-24"
+        className="bg-jade-600 scroll-mt-24"
         spacing="loose"
       >
         <ExpectationSetting />
@@ -36,7 +46,7 @@ export default function HomePage() {
       {/* 4. Why repair instead of buying new */}
       <Section
         id="why-repair"
-        className="bg-jade-600 scroll-mt-24"
+        className="bg-jade-500 scroll-mt-24"
         spacing="loose"
       >
         <WhyRepair />
@@ -45,7 +55,7 @@ export default function HomePage() {
       {/* 5. About me */}
       <Section
         id="about-me"
-        className="bg-jade-500 scroll-mt-24"
+        className="bg-jade-600 scroll-mt-24"
         spacing="loose"
       >
         <AboutMe />
@@ -54,14 +64,18 @@ export default function HomePage() {
       {/* 6. Contact & photo submission (primary CTA) */}
       <Section
         id="contact"
-        className="bg-jade-600 scroll-mt-24"
+        className="bg-jade-700 scroll-mt-24"
         spacing="loose"
       >
         <ContactAndPhotoSubmission />
       </Section>
 
       {/* 7. Footer */}
-      <Section className="bg-jade-700 scroll-mt-24" spacing="loose">
+      <Section
+        className="bg-jade-800 scroll-mt-24"
+        spacing="loose"
+        pattern={false}
+      >
         <Footer />
       </Section>
     </main>

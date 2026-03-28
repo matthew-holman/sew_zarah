@@ -34,6 +34,21 @@ export const process = {
   ],
 };
 
+// ── Services (Services) ───────────────────────────────────────────────────────
+export const services = {
+  heading: "Vanliga lagningar",
+  intro:
+    "Här är exempel på vad jag ofta hjälper till med. Är du osäker – skicka en förfrågan.",
+  items: [
+    "Laga hål och slitningar",
+    "Byta dragkedjor",
+    "Lägga upp byxor och ärmar",
+    "Justera passform",
+    "Laga sömmar",
+    "Foder och innerlagningar",
+  ],
+};
+
 // ── Pricing (ExpectationSetting) ─────────────────────────────────────────────
 export const pricing = {
   heading: "Så fungerar priser och bedömning",
