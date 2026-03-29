@@ -12,8 +12,8 @@ export default function ContactSuccessBanner() {
 
   return (
     <div className="mb-6 rounded-2xl bg-white/10 p-4 text-sm text-white ring-1 ring-white/15">
-      Thanks — we’ve received your request. We’ll review your photos and get
-      back to you.
+      Tack, jag har fått din förfrågan. Jag tittar på dina bilder och återkommer
+      snart.
     </div>
   );
 }
