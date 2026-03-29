@@ -12,21 +12,30 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
-input,
-textarea,
-select,
-button {
-  color: inherit;
-  font: inherit;
-}
+@layer base {
+  input,
+  textarea,
+  select,
+  button {
+    color: inherit;
+    font: inherit;
+  }
 
-input,
-textarea {
-  -webkit-appearance: none;
-  appearance: none;
+  button,
+  [role="button"] {
+    cursor: pointer;
+  }
+
+  input,
+  textarea {
+    -webkit-appearance: none;
+    appearance: none;
+  }
 }
 
 @theme {
+  --font-display: var(--font-playfair), Georgia, serif;
+
   --color-jade-50: #f2fbf7;
   --color-jade-100: #dff6ec;
   --color-jade-200: #b7ead1;

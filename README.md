@@ -57,3 +57,7 @@ public/                           static assets
 ## Deployment
 
 The site deploys to Netlify as a static export. The contact form uses `data-netlify="true"` — no API routes or server functions required. Netlify detects and handles the form automatically on deploy.
+
+# sew_zarah
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0909f107-c361-4252-a25a-2dc378704810/deploy-status)](https://app.netlify.com/projects/sewzarah/deploys)
